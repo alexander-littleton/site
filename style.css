@@ -4,8 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: #202020;
+}
 header {
-    width: 80%;
     margin: auto;
 }
 .title {
@@ -15,14 +17,21 @@ header {
     text-align: left;
     font-size: 2em;
     font-family: 'Permanent Marker', cursive;
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 10%;
 }
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
-    color: #ee77d0;
+    display: inline-block;
+    background: linear-gradient(45deg, #ee77d0, #008cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
-    text-shadow: 1px 1px #008cff;
     font-family: 'Permanent Marker', cursive;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -33,45 +42,37 @@ h1 {
     margin: auto;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 0.2px;
-    color: rgb(49, 49, 49);
+    color: #e6e6e6;
     line-height: 1.9;
     font-size: 1.15rem;
-}
-
-a {
-    color: inherit;
-    text-decoration: inherit;
 }
 
 .icon-row {
     text-align: center;
 }
 
-p {
-
-}
 .icon {
     font-size: 4em;
     text-align: center;
-    color: rgb(49, 49, 49);
+    color: #e6e6e6;
 }
 
 .icon:hover {
-    color: #ee77d0;
+    background: linear-gradient(45deg, #ee77d0, #008cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 footer {
     width: 100%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 40px;
     text-align: center;
-    background-color: #ee77d0;
+    background: linear-gradient(45deg, #ee77d0, #008cff);
 }
 
 .icon-link {
     font-size: 2em;
     text-align: center;
-    color: rgb(49, 49, 49);
+    color: #202020;
     background-color: transparent;
 }
