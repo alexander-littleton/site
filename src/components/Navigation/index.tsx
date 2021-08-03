@@ -1,8 +1,8 @@
 import NavButton from "./NavButton/index";
 import styled from "styled-components";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import About from "../../pages/about";
 import Tools from "../../pages/tools";
+import Home from "../../pages/home";
 import FadeIn from "../FadeIn";
 
 const NavWrapper = styled.div`
@@ -24,15 +24,12 @@ export default function Navigation() {
           <Link to="/csaTools">
             <NavButton text="Tools" />
           </Link>
-          <Link to="/about">
-            <NavButton text="About Me" />
-          </Link>
         </NavWrapper>
 
         <Switch>
           <Route exact path="/">
             <FadeIn>
-              <h1>r</h1>
+              <Home />
             </FadeIn>
           </Route>
           <Route path="/projects">
@@ -43,11 +40,6 @@ export default function Navigation() {
           <Route path="/csaTools">
             <FadeIn>
               <Tools />
-            </FadeIn>
-          </Route>
-          <Route path="/about">
-            <FadeIn>
-              <About />
             </FadeIn>
           </Route>
         </Switch>

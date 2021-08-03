@@ -16,18 +16,7 @@ const NamePlate = styled.h1`
   font-family: "Helvetica" bold;
 `;
 
-enum Pages {
-  Home = "Home",
-  Projects = "Projects",
-  Tools = "Tools",
-  AboutMe = "About Me",
-}
-
 function App() {
-  const [view, setView] = useState({
-    page: "home",
-  });
-
   return (
     <BrowserRouter>
       <div className="bodycontainer">
