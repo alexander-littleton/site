@@ -23,7 +23,7 @@ export default function Navigation() {
             <NavButton text="Projects" />
           </Link>
           <Link to="/csaTools">
-            <NavButton text="Tools" href="/csaTools/" />
+            <NavButton text="Tools" href="/csaTools/index.html" />
           </Link>
         </NavWrapper>
 
