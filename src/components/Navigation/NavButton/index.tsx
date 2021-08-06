@@ -25,10 +25,14 @@ const NB = styled.a`
   }
 `;
 
-export default function NavButton(props: { text: string }) {
+export default function NavButton(props: { text: string; href?: string }) {
   return (
     <NavButtonWrapper>
-      <NB>{props.text}</NB>
+      {props.href ? (
+        <NB href={props.href}>{props.text}</NB>
+      ) : (
+        <NB>{props.text}</NB>
+      )}
     </NavButtonWrapper>
   );
 }
