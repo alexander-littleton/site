@@ -5,9 +5,5 @@ const ToolWrapper = styled.div`
 `;
 
 export default function Tools() {
-  return (
-    <ToolWrapper>
-      <a></a>
-    </ToolWrapper>
-  );
+  return <ToolWrapper></ToolWrapper>;
 }

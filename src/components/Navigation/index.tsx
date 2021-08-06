@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Tools from "../../pages/tools";
 import Home from "../../pages/home";
 import FadeIn from "../FadeIn";
+import Projects from "../../pages/projects";
 
 const NavWrapper = styled.div`
   display: flex;
@@ -34,12 +35,7 @@ export default function Navigation() {
           </Route>
           <Route path="/projects">
             <FadeIn>
-              <h1>g</h1>
-            </FadeIn>
-          </Route>
-          <Route path="/csaTools">
-            <FadeIn>
-              <Tools />
+              <Projects />
             </FadeIn>
           </Route>
         </Switch>

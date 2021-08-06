@@ -2,19 +2,24 @@ import styled from "styled-components";
 import Devicon from "../../components/Devicon";
 import { DeviconItem } from "../../components/Devicon/types";
 
+const HomeWrapper = styled.div`
+  justify-content: center;
+  align-items: center;
+  margin-top: 4em;
+`;
+
 const AboutBlurb = styled.p`
-  font-size: 1.8em;
+  font-size: 1.4em;
   text-align: center;
   width: 75%;
+  margin: auto;
 `;
 
 const DeviconRow = styled.div`
   text-align: center;
-  margin-top: 3em;
-`;
-
-const HomeWrapper = styled.div`
-  margin-top: 4em;
+  margin-top: 1em;
+  word-wrap: break-word;
+  font-size: 4em;
 `;
 
 export default function Home() {
@@ -23,10 +28,8 @@ export default function Home() {
       <AboutBlurb>
         I'm a software engineer who got his start building tools for digital ad
         performance data analysis. I currently work mostly with React/TypeScript
-        and utilize GraphQL for API calls.{" "}
-        <a href="https://www.github.com/alexander-littleton">GitHub</a>
+        and utilize GraphQL for API calls.
       </AboutBlurb>
-      <div className="parent"></div>
       <DeviconRow>
         <Devicon type={DeviconItem.react} />
         <Devicon type={DeviconItem.typeScript} />

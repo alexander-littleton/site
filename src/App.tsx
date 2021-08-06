@@ -1,32 +1,38 @@
-import { useState } from "react";
 import "./App.css";
 import styled from "styled-components";
 import Navigation from "./components/Navigation";
-import { BrowserRouter } from "react-router-dom";
-
-const GradientLine = styled.div`
-  width: 100%;
-  height: 10px;
-`;
+import { HashRouter } from "react-router-dom";
+import FadeIn from "./components/FadeIn";
 
 const NamePlateWrapper = styled.div`
   text-align: center;
 `;
-const NamePlate = styled.h1`
-  font-family: "Helvetica" bold;
+const NamePlate = styled.a`
+  font-size: 3em;
+  background: linear-gradient(45deg, #ee77d0, #008cff);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Outrun";
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+  animation: gradient-move 5s ease infinite;
+  user-select: none;
+  cursor: pointer;
 `;
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="bodycontainer">
-        <GradientLine className="gradient-background" />
-        <NamePlateWrapper>
-          <NamePlate>ALEX LITTLETON</NamePlate>
-        </NamePlateWrapper>
-        <Navigation />
+        <FadeIn>
+          <NamePlateWrapper>
+            <NamePlate href="/">ALEX LITTLETON</NamePlate>
+          </NamePlateWrapper>
+          <Navigation />
+        </FadeIn>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

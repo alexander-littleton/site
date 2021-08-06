@@ -11,4 +11,5 @@ export enum DeviconItem {
 
 export interface DeviconProps {
   type: DeviconItem;
+  style?: Object;
 }

@@ -1,5 +1,6 @@
 {
   "name": "personal-site",
+  "homepage": "https://alexander-littleton.github.io/",
   "version": "0.1.0",
   "license": "MIT",
   "private": true,
@@ -11,6 +12,7 @@
     "@types/node": "^16.4.0",
     "@types/react": "^17.0.14",
     "@types/react-dom": "^17.0.9",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router": "^5.2.0",
@@ -22,6 +24,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
