@@ -22,7 +22,7 @@ export default function Projects() {
         title="Portfolio Site"
         imageSource=""
         stack={[DeviconItem.typeScript, DeviconItem.react]}
-        gitHubLink="https://github.com/alexander-littleton/alexander-littleton.github.io"
+        gitHubLink="hhttps://github.com/alexander-littleton/alexander-littleton.github.io/tree/raw-react"
         description="Multi-page custom portfolio site with React Router. Built from scratch utilizing styled-components for styling. "
       />
       <Project
