@@ -35,6 +35,8 @@ export default function Home() {
         <Devicon type={DeviconItem.typeScript} />
         <Devicon type={DeviconItem.graphQL} />
         <Devicon type={DeviconItem.postGreSQL} />
+        <Devicon type={DeviconItem.jQuery} />
+        <Devicon type={DeviconItem.javaScript} />
         <Devicon type={DeviconItem.python} />
         <Devicon type={DeviconItem.git} />
       </DeviconRow>

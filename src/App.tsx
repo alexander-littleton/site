@@ -8,7 +8,7 @@ const NamePlateWrapper = styled.div`
   text-align: center;
 `;
 const NamePlate = styled.a`
-  font-size: 3em;
+  font-size: calc((0.5em + 1vmin) + (0.5em + 1vmax));
   background: linear-gradient(45deg, #ee77d0, #008cff);
   background-size: 200%;
   -webkit-background-clip: text;

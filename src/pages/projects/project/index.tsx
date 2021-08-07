@@ -20,8 +20,7 @@ const ProjectTitle = styled.h2`
 `;
 
 const ProjectThumbnail = styled.img`
-  max-height: calc((5em + 1vmin) + (5em + 1vmax));
-  max-width: auto;
+  max-width: 100%;
 `;
 
 const ProjectDescription = styled.p`
