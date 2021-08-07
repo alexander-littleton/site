@@ -22,7 +22,7 @@ export default function Projects() {
         title="Portfolio Site"
         imageSource=""
         stack={[DeviconItem.typeScript, DeviconItem.react]}
-        gitHubLink="https://github.com/alexander-littleton/csaTools"
+        gitHubLink="https://github.com/alexander-littleton/alexander-littleton.github.io/tree/raw-react"
         description="Multi-page custom portfolio site with React Router. Built from scratch utilizing styled-components for styling. "
       />
       <Project
@@ -45,14 +45,14 @@ export default function Projects() {
         title="Out of Stock Ad Script"
         imageSource={oosAdScriptThumbnail}
         stack={[DeviconItem.javaScript]}
-        gitHubLink="https://github.com/alexander-littleton/csaTools"
+        gitHubLink="https://github.com/alexander-littleton/stock-check"
         description="Google Script for pausing Paid Search ads within Google Ads campaigns where an HTML tag with a specified value is found. The primary use case for this script is to pause product ads if the product is out of stock. Biggest pitfall is the amount of time it takes to set up for each account."
       />
       <Project
         title="Product Feed Crawler"
         imageSource={stockChangerThumbnail}
         stack={[DeviconItem.python]}
-        gitHubLink="https://github.com/alexander-littleton/csaTools"
+        gitHubLink="https://github.com/alexander-littleton/stock-crawler"
         description="Python script used to crawl Google Shopping product feeds for stock status. Outputs a .csv of products marked 'in stock' within the feed but marked 'out of stock' or are unavailable on their landing pages.  "
       />
     </ProjectsWrapper>
