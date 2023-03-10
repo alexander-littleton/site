@@ -86,34 +86,40 @@ const LiveDemoLink = styled.a`
     background-position-x: 0%;
   }
 `;
-interface ProjectProps {
+
+export default function Project({
+  title,
+  imageSource,
+  stack,
+  description,
+  gitHubLink,
+  liveDemoLink
+}: {
   title: string;
   imageSource: string;
   stack: DeviconItem[];
   description: string;
   gitHubLink: string;
   liveDemoLink?: string;
-}
-
-export default function Project(props: ProjectProps) {
+}) {
   return (
     <ProjectWrapper>
-      <ProjectTitle>{props.title}</ProjectTitle>
-      <ProjectThumbnail src={props.imageSource} />
-      <ProjectDescription>{props.description}</ProjectDescription>
+      <ProjectTitle>{title}</ProjectTitle>
+      <ProjectThumbnail src={imageSource} />
+      <ProjectDescription>{description}</ProjectDescription>
       <BottomSpacer />
       <BottomContainer>
         <DeviconContainer>
-          {props.stack.map((item) => {
+          {stack.map((item) => {
             return <Devicon type={item} />;
           })}
         </DeviconContainer>
         <LinkContainer>
-          <GithubLink href={props.gitHubLink} target="_blank">
+          <GithubLink href={gitHubLink} target="_blank">
             Repo
           </GithubLink>
-          {props.liveDemoLink ? (
-            <LiveDemoLink href={props.liveDemoLink} target="_blank">
+          {liveDemoLink ? (
+            <LiveDemoLink href={liveDemoLink} target="_blank">
               Demo
             </LiveDemoLink>
           ) : null}

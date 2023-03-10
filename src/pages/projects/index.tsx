@@ -28,7 +28,7 @@ export default function Projects() {
       <Project
         title="Client Sheet"
         imageSource={clientSheetThumbnail}
-        stack={[DeviconItem.javaScript, DeviconItem.jQuery]}
+        stack={[DeviconItem.javaScript]}
         gitHubLink="https://github.com/alexander-littleton/csaTools"
         liveDemoLink="https://alexander-littleton.github.io/csaTools/clientsheet.html"
         description="Spreadsheet used for tracking recurring tasks for Google Ads clients. All data is kept in localStorage which is limiting for users who switch between browsers or desktops frequently. Used as PoC for a larger project."
