@@ -8,8 +8,3 @@ export enum DeviconItem {
   postGreSQL = "devicon-postgresql-plain-wordmark",
   git = "devicon-git-plain-wordmark",
 }
-
-export interface DeviconProps {
-  type: DeviconItem;
-  style?: Object;
-}

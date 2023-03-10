@@ -1,4 +1,3 @@
-// FadeIn.js
 import styled, { keyframes } from "styled-components";
 const fadeIn = keyframes`
   from {
@@ -8,12 +7,20 @@ const fadeIn = keyframes`
     opacity: 1;
   }
 `;
-const FadeIn = ({ duration = 3000, delay = 0, children, ...delegated }) => {
+const Wrapper = styled.div`
+  @media (prefers-reduced-motion: no-preference) {
+    animation-name: ${fadeIn};
+    animation-fill-mode: backwards;
+  }
+`;
+const FadeIn = ({ duration = 3000, delay = 0, children }: {
+  duration?: number;
+  delay?: number;
+  children: React.ReactNode;
+}) => {
   return (
     <Wrapper
-      {...delegated}
       style={{
-        ...(delegated.style || {}),
         animationDuration: duration + "ms",
         animationDelay: delay + "ms",
       }}
@@ -22,10 +29,5 @@ const FadeIn = ({ duration = 3000, delay = 0, children, ...delegated }) => {
     </Wrapper>
   );
 };
-const Wrapper = styled.div`
-  @media (prefers-reduced-motion: no-preference) {
-    animation-name: ${fadeIn};
-    animation-fill-mode: backwards;
-  }
-`;
+
 export default FadeIn;

@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { DeviconItem } from "../../components/Devicon/types";
 import Project from "./project";
 import stockChangerThumbnail from "./projectThumbnails/stock_checker.png";
 import clientSheetThumbnail from "./projectThumbnails/client_sheet.png";
 import alphaNumericThumbnail from "./projectThumbnails/alphanumeric_tool.png";
 import oosAdScriptThumbnail from "./projectThumbnails/python_stock_checker.png";
+import { DeviconItem } from "../../components/Devicon/types";
 
 const ProjectsWrapper = styled.div`
   display: grid;
