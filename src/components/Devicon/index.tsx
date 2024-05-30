@@ -15,10 +15,16 @@ const StyledDevicon = styled.span`
   }
 `;
 
-export default function Devicon({ type }: { type: string }) {
+export default function Devicon({
+  type,
+  label,
+}: {
+  type: string;
+  label: string;
+}) {
   return (
     <StyledDevicon>
-      <i className={type} />
+      <i className={type} role="img" aria-label={label} />
     </StyledDevicon>
   );
 }

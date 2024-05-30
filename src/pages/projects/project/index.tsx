@@ -38,7 +38,7 @@ const BottomContainer = styled.div`
 `;
 
 const DeviconContainer = styled.div`
-  font-size: calc((1em + 1vmin) + (1em + 1vmax)); ;
+  font-size: calc((1em + 1vmin) + (1em + 1vmax));
 `;
 
 const LinkContainer = styled.span``;
@@ -93,11 +93,11 @@ export default function Project({
   stack,
   description,
   gitHubLink,
-  liveDemoLink
+  liveDemoLink,
 }: {
   title: string;
   imageSource: string;
-  stack: DeviconItem[];
+  stack: { icon: DeviconItem; label: string }[];
   description: string;
   gitHubLink: string;
   liveDemoLink?: string;
@@ -111,7 +111,7 @@ export default function Project({
       <BottomContainer>
         <DeviconContainer>
           {stack.map((item) => {
-            return <Devicon type={item} />;
+            return <Devicon type={item.icon} label={item.label} />;
           })}
         </DeviconContainer>
         <LinkContainer>
