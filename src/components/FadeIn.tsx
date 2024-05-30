@@ -13,20 +13,12 @@ const Wrapper = styled.div`
     animation-fill-mode: backwards;
   }
 `;
-const FadeIn = ({
-  duration = 3000,
-  delay = 0,
-  children,
-}: {
-  duration?: number;
-  delay?: number;
-  children: React.ReactNode;
-}) => {
+const FadeIn = ({ children }: { children: React.ReactNode }) => {
   return (
     <Wrapper
       style={{
-        animationDuration: duration + "ms",
-        animationDelay: delay + "ms",
+        animationDuration: "3000ms",
+        animationDelay: "0ms",
       }}
     >
       {children}
