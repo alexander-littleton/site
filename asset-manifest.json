@@ -1,27 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.bd13724c.chunk.css",
-    "main.js": "/static/js/main.6256b87f.chunk.js",
-    "main.js.map": "/static/js/main.6256b87f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.b128a478.js",
-    "runtime-main.js.map": "/static/js/runtime-main.b128a478.js.map",
-    "static/js/2.dd61927b.chunk.js": "/static/js/2.dd61927b.chunk.js",
-    "static/js/2.dd61927b.chunk.js.map": "/static/js/2.dd61927b.chunk.js.map",
-    "static/js/3.6a157c5f.chunk.js": "/static/js/3.6a157c5f.chunk.js",
-    "static/js/3.6a157c5f.chunk.js.map": "/static/js/3.6a157c5f.chunk.js.map",
+    "main.css": "/static/css/main.255f50ea.css",
+    "main.js": "/static/js/main.5abf36fb.js",
+    "static/js/787.d94c3740.chunk.js": "/static/js/787.d94c3740.chunk.js",
+    "static/media/alphanumeric_tool.png": "/static/media/alphanumeric_tool.40e904c83dd4df166b6e.png",
+    "static/media/client_sheet.png": "/static/media/client_sheet.4b55434e59f3fca12694.png",
+    "static/media/python_stock_checker.png": "/static/media/python_stock_checker.21253cad4acb6af53086.png",
+    "static/media/Outrun.otf": "/static/media/Outrun.fb555d4ee3de8868db90.otf",
+    "static/media/stock_checker.png": "/static/media/stock_checker.b06862680de42a0d25f9.png",
     "index.html": "/index.html",
-    "static/css/main.bd13724c.chunk.css.map": "/static/css/main.bd13724c.chunk.css.map",
-    "static/js/2.dd61927b.chunk.js.LICENSE.txt": "/static/js/2.dd61927b.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/Outrun.fb555d4e.otf",
-    "static/media/alphanumeric_tool.40e904c8.png": "/static/media/alphanumeric_tool.40e904c8.png",
-    "static/media/client_sheet.4b55434e.png": "/static/media/client_sheet.4b55434e.png",
-    "static/media/python_stock_checker.21253cad.png": "/static/media/python_stock_checker.21253cad.png",
-    "static/media/stock_checker.b0686268.png": "/static/media/stock_checker.b0686268.png"
+    "main.255f50ea.css.map": "/static/css/main.255f50ea.css.map",
+    "main.5abf36fb.js.map": "/static/js/main.5abf36fb.js.map",
+    "787.d94c3740.chunk.js.map": "/static/js/787.d94c3740.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.b128a478.js",
-    "static/js/2.dd61927b.chunk.js",
-    "static/css/main.bd13724c.chunk.css",
-    "static/js/main.6256b87f.chunk.js"
+    "static/css/main.255f50ea.css",
+    "static/js/main.5abf36fb.js"
   ]
 }
