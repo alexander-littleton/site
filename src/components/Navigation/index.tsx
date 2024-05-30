@@ -1,4 +1,4 @@
-import NavButton from "./NavButton/index";
+import NavButton from "./NavButton";
 import styled from "styled-components";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "../../pages/home";
