@@ -25,14 +25,12 @@ const NamePlate = styled.a`
 function App() {
   return (
     <HashRouter>
-      <div className="bodycontainer">
-        <FadeIn>
-          <NamePlateWrapper>
-            <NamePlate href="/">ALEX LITTLETON</NamePlate>
-          </NamePlateWrapper>
-          <Navigation />
-        </FadeIn>
-      </div>
+      <FadeIn>
+        <NamePlateWrapper>
+          <NamePlate href="/">ALEX LITTLETON</NamePlate>
+        </NamePlateWrapper>
+        <Navigation />
+      </FadeIn>
     </HashRouter>
   );
 }
