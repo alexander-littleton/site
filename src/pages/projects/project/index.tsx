@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import Devicon from "../../../components/Devicon";
-import { DeviconItem } from "../../../components/Devicon/types";
+import Devicon, { SupportedIcons } from "../../../components/Devicon";
 
 const ProjectWrapper = styled.div`
   align-items: center;
@@ -97,7 +96,7 @@ export default function Project({
 }: {
   title: string;
   imageSource: string;
-  stack: { icon: DeviconItem; label: string }[];
+  stack: SupportedIcons[];
   description: string;
   gitHubLink: string;
   liveDemoLink?: string;
@@ -110,9 +109,9 @@ export default function Project({
       <BottomSpacer />
       <BottomContainer>
         <DeviconContainer>
-          {stack.map((item) => {
-            return <Devicon type={item.icon} label={item.label} />;
-          })}
+          {stack.map((item) => (
+            <Devicon type={item} key={title + item} />
+          ))}
         </DeviconContainer>
         <LinkContainer>
           <GithubLink href={gitHubLink} target="_blank">

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Devicon from "../../components/Devicon";
-import { DeviconItem } from "../../components/Devicon/types";
 
 const HomeWrapper = styled.div`
   display: flex;
@@ -24,12 +23,12 @@ export default function Home() {
       </p>
       <h2>Current Stack</h2>
       <DeviconRow>
-        <Devicon type={DeviconItem.react} label="React" />
-        <Devicon type={DeviconItem.typeScript} label="Typescript" />
-        <Devicon type={DeviconItem.go} label="Go" />
-        <Devicon type={DeviconItem.graphQL} label="Graph QL" />
-        <Devicon type={DeviconItem.mongoDB} label="Mongo DB" />
-        <Devicon type={DeviconItem.python} label="Python" />
+        <Devicon type="react" />
+        <Devicon type="typescript" />
+        <Devicon type="go" />
+        <Devicon type="graphQl" />
+        <Devicon type="mongo" />
+        <Devicon type="python" />
       </DeviconRow>
     </HomeWrapper>
   );
