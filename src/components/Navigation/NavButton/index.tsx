@@ -10,6 +10,7 @@ const NB = styled.a`
   background-size: 300%;
   background-position-x: 100%;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
