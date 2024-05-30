@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Devicon, { SupportedIcons } from "../../../components/Devicon";
+import Devicon, { SupportedIcons } from "../../components/Devicon";
 
 const ProjectWrapper = styled.div`
   align-items: center;

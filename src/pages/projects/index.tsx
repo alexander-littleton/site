@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Project from "./project";
+import Project from "./Project";
 import stockChangerThumbnail from "./projectThumbnails/stock_checker.png";
 import clientSheetThumbnail from "./projectThumbnails/client_sheet.png";
 import alphaNumericThumbnail from "./projectThumbnails/alphanumeric_tool.png";
