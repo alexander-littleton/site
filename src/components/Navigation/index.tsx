@@ -14,10 +14,10 @@ export default function Navigation() {
   return (
     <Router>
       <NavWrapper>
-        <Link to="/" style={{textDecoration: 'none'}}>
+        <Link to="/" style={{ textDecoration: "none" }}>
           <NavButton text="Home" />
         </Link>
-        <Link to="/projects" style={{textDecoration: 'none'}}>
+        <Link to="/projects" style={{ textDecoration: "none" }}>
           <NavButton text="Projects" />
         </Link>
         <NavButton text="Tools" href="/csaTools" />

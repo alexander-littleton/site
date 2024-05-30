@@ -2,7 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 @font-face {
   font-family: Outrun;
-  src: local("Outrun"), url(./assets/fonts/Outrun.otf) format("woff");
+  src:
+    local("Outrun"),
+    url(./assets/fonts/Outrun.otf) format("woff");
 }
 
 body {
