@@ -11,8 +11,10 @@ html::-webkit-scrollbar {
 }
 
 html,
-body {
+body,
+#root {
   overflow-x: hidden;
+  min-height: 100%;
 }
 
 .parent {
