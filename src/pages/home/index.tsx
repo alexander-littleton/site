@@ -8,13 +8,16 @@ const HomeWrapper = styled.div`
   justify-content: center;
   align-items: center;
   text-align: left;
-  height: 100%;
+  @media screen and (min-width: 480px) {
+    height: 100%;
+  }
 `;
 
 const DeviconRow = styled.div`
   text-align: center;
   word-wrap: break-word;
   font-size: 4em;
+  padding: 24px;
 `;
 
 const Bio = styled.p`

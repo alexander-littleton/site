@@ -25,7 +25,7 @@ const NamePlate = styled.a`
 function App() {
   return (
     <HashRouter>
-      <FadeIn>
+      <FadeIn style={{ display: "flex", flexDirection: "column" }}>
         <NamePlateWrapper>
           <NamePlate href="/">ALEX LITTLETON</NamePlate>
         </NamePlateWrapper>

@@ -1,3 +1,4 @@
+import { CSSProperties } from "react";
 import styled, { keyframes } from "styled-components";
 const fadeIn = keyframes`
   from {
@@ -13,12 +14,20 @@ const Wrapper = styled.div`
     animation-fill-mode: backwards;
   }
 `;
-const FadeIn = ({ children }: { children: React.ReactNode }) => {
+const FadeIn = ({
+  children,
+  style,
+}: {
+  children: React.ReactNode;
+  style?: CSSProperties;
+}) => {
   return (
     <Wrapper
       style={{
         animationDuration: "3000ms",
         animationDelay: "0ms",
+        height: "100%",
+        ...style,
       }}
     >
       {children}
