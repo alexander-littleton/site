@@ -1,6 +1,6 @@
 ### Running Locally
 
-Requires Node 16 or higher. Run `npm i` then `npm start` to standup the `vite` server.
+Requires Node 18 or higher. Run `npm i` then `npm start` to standup the `vite` server.
 
 ### Deploying
 
