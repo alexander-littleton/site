@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Devicon from "../../components/Devicon";
 import { useEffect, useState } from "react";
+import FadeIn from "../../components/FadeIn";
 
 const HomeWrapper = styled.div`
   display: flex;
@@ -13,15 +14,8 @@ const HomeWrapper = styled.div`
   }
 `;
 
-const DeviconRow = styled.div`
-  text-align: center;
-  word-wrap: break-word;
-  font-size: 4em;
-  padding: 24px;
-`;
-
 const Bio = styled.p`
-  font-size: 2em;
+  font-size: 1.5em;
   flex-grow: 1;
   white-space: pre-line;
 `;
@@ -29,16 +23,24 @@ const Bio = styled.p`
 export default function Home() {
   const [currentText, setCurrentText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showDevicons, setShowDevicons] = useState(false);
+
   const bio =
-    `Hey there!\n` +
-    `I'm a Full Stack Software Engineer based in Philadelphia, PA with experience in adtech and edtech startups. ` +
-    `Through my past work I've specialized in reactivity, accessibility, automated testing, and layered architecture.`;
+    `Hey there!\n\n` +
+    `I'm a Full Stack Software Engineer based out of Philadelphia, PA with experience in adtech and edtech startups. ` +
+    `Through my past work I've specialized in reactivity, accessibility, automated testing, and layered architecture.\n\n` +
+    `I spend a great deal of time learning technologies that are new to me so be sure to check out my personal projects to get ` +
+    `a good feel for what I've been up to.`;
   useEffect(() => {
     if (currentIndex < bio.length) {
       const timeout = setTimeout(() => {
         setCurrentText((prevText) => prevText + bio[currentIndex]);
         setCurrentIndex((prevIndex) => prevIndex + 1);
       }, 15);
+
+      if (currentIndex === bio.length - 1) {
+        setShowDevicons(true);
+      }
 
       return () => clearTimeout(timeout);
     }
@@ -47,14 +49,23 @@ export default function Home() {
   return (
     <HomeWrapper>
       <Bio>{currentText}</Bio>
-      <DeviconRow>
-        <Devicon type="react" />
-        <Devicon type="typescript" />
-        <Devicon type="go" />
-        <Devicon type="graphQl" />
-        <Devicon type="mongo" />
-        <Devicon type="python" />
-      </DeviconRow>
+      {showDevicons && (
+        <FadeIn
+          style={{
+            textAlign: "center",
+            wordWrap: "break-word",
+            fontSize: "4em",
+            padding: "24px",
+          }}
+        >
+          <Devicon type="react" />
+          <Devicon type="typescript" />
+          <Devicon type="go" />
+          <Devicon type="graphQl" />
+          <Devicon type="mongo" />
+          <Devicon type="python" />
+        </FadeIn>
+      )}
     </HomeWrapper>
   );
 }
