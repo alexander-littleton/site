@@ -6,10 +6,9 @@ const ProjectWrapper = styled.div`
   margin: auto;
   display: flex;
   flex-direction: column;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  position: relative;
   border-bottom: 2px solid white;
+  gap: 1em;
+  padding: 1em;
 `;
 
 const ProjectTitle = styled.h2`
@@ -26,21 +25,16 @@ const ProjectDescription = styled.p`
   font-size: calc((0.4em + 0.3vmin) + (0.4em + 0.3vmax));
 `;
 
-const BottomSpacer = styled.div`
-  height: calc((2.5em + 1vmin) + (2.5em + 1vmax));
-`;
-
-const BottomContainer = styled.div`
-  position: absolute;
-  bottom: 2em;
-  text-align: center;
-`;
-
 const DeviconContainer = styled.div`
-  font-size: calc((1em + 1vmin) + (1em + 1vmax));
+  display: "flex";
+  gap: 1em;
+  font-size: 2em;
 `;
 
-const LinkContainer = styled.span``;
+const LinkContainer = styled.span`
+  display: flex;
+  gap: 1.5em;
+`;
 
 const GithubLink = styled.a`
   border: none;
@@ -53,9 +47,6 @@ const GithubLink = styled.a`
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.3em;
-  margin-left: 0.3em;
-  margin-right: 0.3em;
-  padding: 0px 0.3em 0px 0.3em;
   transition: background-position-x 1.3s;
   user-select: none;
   cursor: pointer;
@@ -75,9 +66,6 @@ const LiveDemoLink = styled.a`
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.3em;
-  margin-left: 0.3em;
-  margin-right: 0.3em;
-  padding: 0px 0.3em 0px 0.3em;
   transition: background-position-x 1.3s;
   user-select: none;
   cursor: pointer;
@@ -106,24 +94,21 @@ export default function Project({
       <ProjectTitle>{title}</ProjectTitle>
       {imageSource && <ProjectThumbnail src={imageSource} />}
       <ProjectDescription>{description}</ProjectDescription>
-      <BottomSpacer />
-      <BottomContainer>
-        <DeviconContainer>
-          {stack.map((item) => (
-            <Devicon type={item} key={title + item} />
-          ))}
-        </DeviconContainer>
-        <LinkContainer>
-          <GithubLink href={gitHubLink} target="_blank">
-            Repo
-          </GithubLink>
-          {liveDemoLink ? (
-            <LiveDemoLink href={liveDemoLink} target="_blank">
-              Demo
-            </LiveDemoLink>
-          ) : null}
-        </LinkContainer>
-      </BottomContainer>
+      <DeviconContainer>
+        {stack.map((item) => (
+          <Devicon type={item} key={title + item} />
+        ))}
+      </DeviconContainer>
+      <LinkContainer>
+        <GithubLink href={gitHubLink} target="_blank">
+          Repo
+        </GithubLink>
+        {liveDemoLink ? (
+          <LiveDemoLink href={liveDemoLink} target="_blank">
+            Demo
+          </LiveDemoLink>
+        ) : null}
+      </LinkContainer>
     </ProjectWrapper>
   );
 }
