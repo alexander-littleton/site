@@ -38,7 +38,7 @@ export default function Navigation() {
       <NavWrapper>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/projects">Projects</NavLink>
-        <NonRouterLink href="/csaTools">Tools</NonRouterLink>
+        <NonRouterLink href="/csaTools/">Tools</NonRouterLink>
       </NavWrapper>
 
       <Switch>
