@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { CSSObject } from "styled-components";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./pages/home";
 import FadeIn from "./components/FadeIn";
@@ -10,24 +10,27 @@ const NavWrapper = styled.div`
   gap: 1.5em;
 `;
 
-const NavButton = styled(Link)`
-  background: linear-gradient(to right, #ee77d0, #008cff, #e6e6e6, #e6e6e6);
-  background-size: 300%;
-  background-position-x: 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 1.3em;
-  transition: background-position-x 0.8s;
-  user-select: none;
-  cursor: pointer;
-  &:hover {
-    background-position-x: 0%;
-  }
-  text-decoration: none;
-`;
+const linkStyle: CSSObject = {
+  background: "linear-gradient(to right, #ee77d0, #008cff, #e6e6e6, #e6e6e6)",
+  backgroundSize: "300%",
+  backgroundPositionX: "100%",
+  backgroundClip: "text",
+  WebkitTextFillColor: "transparent",
+  fontFamily: `"Montserrat", sans-serif`,
+  fontWeight: 500,
+  fontSize: "1.3em",
+  transition: "background-position-x 0.8s",
+  userSelect: "none",
+  cursor: "pointer",
+
+  "&:hover": {
+    backgroundPositionX: "0%",
+  },
+  textDecoration: "none",
+};
+
+const NavButton = styled(Link)(() => linkStyle);
+const NonRouterLink = styled.a(() => linkStyle);
 
 export default function Navigation() {
   return (
@@ -35,7 +38,7 @@ export default function Navigation() {
       <NavWrapper>
         <NavButton to="/">Home</NavButton>
         <NavButton to="/projects">Projects</NavButton>
-        <NavButton to="/csaTools">Tools</NavButton>
+        <NonRouterLink href="/csaTools">Tools</NonRouterLink>
       </NavWrapper>
 
       <Switch>
