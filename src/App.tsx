@@ -1,6 +1,6 @@
 import "./App.css";
 import styled from "styled-components";
-import Navigation from "./components/Navigation";
+import Navigation from "./Navigation";
 import { HashRouter } from "react-router-dom";
 import FadeIn from "./components/FadeIn";
 

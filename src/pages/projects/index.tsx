@@ -8,11 +8,8 @@ import oosAdScriptThumbnail from "./projectThumbnails/python_stock_checker.png";
 const ProjectsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  grid-template-columns: repeat(auto-fit, minmax(21.5em, 1fr));
-  max-width: 900px;
+  max-width: 1200px;
   margin: auto;
-  margin-top: 2em;
-  grid-gap: 3em;
 `;
 
 export default function Projects() {
