@@ -19,7 +19,7 @@ export default function Projects() {
       <Project
         title="Portfolio Site"
         stack={["typescript", "react"]}
-        gitHubLink="https://github.com/alexander-littleton/alexander-littleton.github.io/tree/raw-react"
+        gitHubLink="https://github.com/alexander-littleton/alexander-littleton.github.io/tree/main"
         description="Multi-page custom portfolio site with React Router. Built from scratch utilizing styled-components for styling. "
       />
       <Project
@@ -27,7 +27,7 @@ export default function Projects() {
         imageSource={clientSheetThumbnail}
         stack={["typescript"]}
         gitHubLink="https://github.com/alexander-littleton/csaTools"
-        liveDemoLink="https://alexander-littleton.github.io/csaTools/clientsheet.html"
+        liveDemoLink="https://alexander-littleton.github.io/csaTools/client-sheet/"
         description="Spreadsheet used for tracking recurring tasks for Google Ads clients. All data is kept in localStorage which is limiting for users who switch between browsers or desktops frequently. Used as PoC for a larger project."
       />
       <Project
