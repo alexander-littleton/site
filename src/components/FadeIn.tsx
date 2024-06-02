@@ -26,7 +26,6 @@ const FadeIn = ({
       style={{
         animationDuration: "3000ms",
         animationDelay: "0ms",
-        height: "100%",
         ...style,
       }}
     >

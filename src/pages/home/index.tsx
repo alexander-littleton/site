@@ -37,7 +37,7 @@ export default function Home() {
       const timeout = setTimeout(() => {
         setCurrentText((prevText) => prevText + bio[currentIndex]);
         setCurrentIndex((prevIndex) => prevIndex + 1);
-      }, 15);
+      }, 8);
 
       if (currentIndex === bio.length - 1) {
         setShowDevicons(true);
@@ -55,8 +55,10 @@ export default function Home() {
           style={{
             textAlign: "center",
             wordWrap: "break-word",
-            fontSize: "4em",
+            fontSize: "3.5em",
             padding: "24px",
+            display: "flex",
+            gap: "0.1em",
           }}
         >
           <Devicon type="react" />
