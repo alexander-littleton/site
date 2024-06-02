@@ -26,36 +26,17 @@ const ProjectDescription = styled.p`
 `;
 
 const DeviconContainer = styled.div`
-  display: "flex";
-  gap: 1em;
+  display: flex;
+  gap: 0.5em;
   font-size: 2em;
 `;
 
 const LinkContainer = styled.span`
   display: flex;
-  gap: 1.5em;
+  gap: 3em;
 `;
 
-const GithubLink = styled.a`
-  border: none;
-  background: linear-gradient(to right, #ee77d0, #008cff, #e6e6e6, #e6e6e6);
-  background-size: 300%;
-  background-position-x: 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 1.3em;
-  transition: background-position-x 1.3s;
-  user-select: none;
-  cursor: pointer;
-  &:hover {
-    background-position-x: 0%;
-  }
-`;
-
-const LiveDemoLink = styled.a`
+const ExternalLink = styled.a`
   border: none;
   background: linear-gradient(to right, #ee77d0, #008cff, #e6e6e6, #e6e6e6);
   background-size: 300%;
@@ -100,13 +81,13 @@ export default function Project({
         ))}
       </DeviconContainer>
       <LinkContainer>
-        <GithubLink href={gitHubLink} target="_blank">
-          Repo
-        </GithubLink>
+        <ExternalLink href={gitHubLink} target="_blank">
+          View Repo
+        </ExternalLink>
         {liveDemoLink ? (
-          <LiveDemoLink href={liveDemoLink} target="_blank">
-            Demo
-          </LiveDemoLink>
+          <ExternalLink href={liveDemoLink} target="_blank">
+            Go to Demo
+          </ExternalLink>
         ) : null}
       </LinkContainer>
     </ProjectWrapper>
