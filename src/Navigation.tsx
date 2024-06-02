@@ -29,15 +29,15 @@ const linkStyle: CSSObject = {
   textDecoration: "none",
 };
 
-const NavButton = styled(Link)(() => linkStyle);
+const NavLink = styled(Link)(() => linkStyle);
 const NonRouterLink = styled.a(() => linkStyle);
 
 export default function Navigation() {
   return (
     <Router>
       <NavWrapper>
-        <NavButton to="/">Home</NavButton>
-        <NavButton to="/projects">Projects</NavButton>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
         <NonRouterLink href="/csaTools">Tools</NonRouterLink>
       </NavWrapper>
 
