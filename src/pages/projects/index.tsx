@@ -6,9 +6,10 @@ import alphaNumericThumbnail from "./projectThumbnails/alphanumeric_tool.png";
 import oosAdScriptThumbnail from "./projectThumbnails/python_stock_checker.png";
 
 const ProjectsWrapper = styled.div`
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-template-columns: repeat(auto-fit, minmax(21.5em, 1fr));
-  width: 90%;
+  max-width: 900px;
   margin: auto;
   margin-top: 2em;
   grid-gap: 3em;
@@ -19,7 +20,6 @@ export default function Projects() {
     <ProjectsWrapper>
       <Project
         title="Portfolio Site"
-        imageSource=""
         stack={["typescript", "react"]}
         gitHubLink="https://github.com/alexander-littleton/alexander-littleton.github.io/tree/raw-react"
         description="Multi-page custom portfolio site with React Router. Built from scratch utilizing styled-components for styling. "

@@ -95,7 +95,7 @@ export default function Project({
   liveDemoLink,
 }: {
   title: string;
-  imageSource: string;
+  imageSource?: string;
   stack: SupportedIcons[];
   description: string;
   gitHubLink: string;
@@ -104,7 +104,7 @@ export default function Project({
   return (
     <ProjectWrapper>
       <ProjectTitle>{title}</ProjectTitle>
-      <ProjectThumbnail src={imageSource} />
+      {imageSource && <ProjectThumbnail src={imageSource} />}
       <ProjectDescription>{description}</ProjectDescription>
       <BottomSpacer />
       <BottomContainer>
