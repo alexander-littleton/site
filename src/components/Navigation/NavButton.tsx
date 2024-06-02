@@ -12,9 +12,6 @@ const NB = styled(Link)`
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.3em;
-  margin-left: 0.3em;
-  margin-right: 0.3em;
-  padding: 0px 0.3em 0px 0.3em;
   transition: background-position-x 0.8s;
   user-select: none;
   cursor: pointer;

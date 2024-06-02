@@ -8,6 +8,7 @@ import Projects from "../../pages/projects";
 const NavWrapper = styled.div`
   display: flex;
   justify-content: center;
+  gap: 1.5em;
 `;
 
 export default function Navigation() {
