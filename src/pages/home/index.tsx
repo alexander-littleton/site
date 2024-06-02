@@ -30,7 +30,7 @@ export default function Home() {
     `Hey there!\n\n` +
     `I'm a Full Stack Software Engineer based out of Philadelphia, PA with experience in adtech and edtech startups. ` +
     `Through my past work I've specialized in reactivity, accessibility, automated testing, and layered architecture.\n\n` +
-    `I spend a great deal of time learning technologies that are new to me so be sure to check out my personal projects to get ` +
+    `I spend a great deal of time trying out new technologies so be sure to check out my personal projects to get ` +
     `a good feel for what I've been up to.`;
   useEffect(() => {
     if (currentIndex < bio.length) {

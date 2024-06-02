@@ -20,10 +20,10 @@ export default function Projects() {
         title="Portfolio Site"
         stack={["typescript", "react"]}
         gitHubLink="https://github.com/alexander-littleton/alexander-littleton.github.io/tree/main"
-        description="Multi-page custom portfolio site with React Router. Built from scratch utilizing styled-components for styling. "
+        description="Multi-page custom portfolio site with React Router for SPA routing. Built from scratch utilizing styled-components for most styling and atomic components."
       />
       <Project
-        title="Client Sheet"
+        title="Client Sheet (2020)"
         imageSource={clientSheetThumbnail}
         stack={["typescript"]}
         gitHubLink="https://github.com/alexander-littleton/csaTools"
@@ -31,7 +31,7 @@ export default function Projects() {
         description="Spreadsheet used for tracking recurring tasks for Google Ads clients. All data is kept in localStorage which is limiting for users who switch between browsers or desktops frequently. Used as PoC for a larger project."
       />
       <Project
-        title="Alphanumeric Query Tool"
+        title="Alphanumeric Query Tool (2020)"
         imageSource={alphaNumericThumbnail}
         stack={["javascript"]}
         gitHubLink="https://github.com/alexander-littleton/csaTools/tree/master/query-analysis-tool"
@@ -39,14 +39,14 @@ export default function Projects() {
         description="Data processing application used to extract insights on search queries that are more likely to contain model numbers which typically are higher intent. The export modules ouput the individual n-grams for use keyword funneling. "
       />
       <Project
-        title="Out of Stock Ad Script"
+        title="Out of Stock Ad Script (2021)"
         imageSource={oosAdScriptThumbnail}
         stack={["javascript"]}
         gitHubLink="https://github.com/alexander-littleton/stock-check"
-        description="Google Script for pausing Paid Search ads within Google Ads campaigns where an HTML tag with a specified value is found. The primary use case for this script is to pause product ads if the product is out of stock. Biggest pitfall is the amount of time it takes to set up for each account."
+        description="Google Ads Script for pausing Paid Search ads within Google Ads campaigns where an HTML tag with a specified value is found. The primary use case for this script is to pause product ads if the product is out of stock. Biggest pitfall is the amount of time it takes to set up for each account."
       />
       <Project
-        title="Product Feed Crawler"
+        title="Product Feed Crawler (2021)"
         imageSource={stockChangerThumbnail}
         stack={["python"]}
         gitHubLink="https://github.com/alexander-littleton/stock-crawler"
