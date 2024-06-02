@@ -11,7 +11,6 @@ const NavWrapper = styled.div`
 `;
 
 const NavButton = styled(Link)`
-  border: none;
   background: linear-gradient(to right, #ee77d0, #008cff, #e6e6e6, #e6e6e6);
   background-size: 300%;
   background-position-x: 100%;
