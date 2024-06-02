@@ -14,13 +14,9 @@ export default function Navigation() {
   return (
     <Router>
       <NavWrapper>
-        <Link to="/" style={{ textDecoration: "none" }}>
-          <NavButton text="Home" />
-        </Link>
-        <Link to="/projects" style={{ textDecoration: "none" }}>
-          <NavButton text="Projects" />
-        </Link>
-        <NavButton text="Tools" href="/csaTools" />
+        <NavButton href="/" text="Home" />
+        <NavButton href="/projects" text="Projects" />
+        <NavButton href="/csaTools" text="Tools" />
       </NavWrapper>
 
       <Switch>
@@ -34,6 +30,13 @@ export default function Navigation() {
             <Projects />
           </FadeIn>
         </Route>
+        <Route
+          path="/csaTools"
+          component={() => {
+            window.location.href = "/csaTools";
+            return null;
+          }}
+        ></Route>
       </Switch>
     </Router>
   );

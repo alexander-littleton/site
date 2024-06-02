@@ -1,10 +1,7 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const NavButtonWrapper = styled.div`
-  display: flex;
-`;
-
-const NB = styled.a`
+const NB = styled(Link)`
   border: none;
   background: linear-gradient(to right, #ee77d0, #008cff, #e6e6e6, #e6e6e6);
   background-size: 300%;
@@ -18,22 +15,15 @@ const NB = styled.a`
   margin-left: 0.3em;
   margin-right: 0.3em;
   padding: 0px 0.3em 0px 0.3em;
-  transition: background-position-x 1.3s;
+  transition: background-position-x 0.8s;
   user-select: none;
   cursor: pointer;
   &:hover {
     background-position-x: 0%;
   }
+  text-decoration: none;
 `;
 
-export default function NavButton(props: { text: string; href?: string }) {
-  return (
-    <NavButtonWrapper>
-      {props.href ? (
-        <NB href={props.href}>{props.text}</NB>
-      ) : (
-        <NB>{props.text}</NB>
-      )}
-    </NavButtonWrapper>
-  );
+export default function NavButton(props: { text: string; href: string }) {
+  return <NB to={props.href}>{props.text}</NB>;
 }
