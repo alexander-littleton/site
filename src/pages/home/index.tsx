@@ -21,6 +21,7 @@ const Bio = styled.p`
 `;
 
 export default function Home() {
+  document.title = "Alex Littleton";
   const [currentText, setCurrentText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showDevicons, setShowDevicons] = useState(false);

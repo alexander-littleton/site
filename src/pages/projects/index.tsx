@@ -13,6 +13,7 @@ const ProjectsWrapper = styled.div`
 `;
 
 export default function Projects() {
+  document.title = "Projects - Alex Littleton";
   return (
     <ProjectsWrapper>
       <Project
