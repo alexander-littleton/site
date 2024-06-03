@@ -89,7 +89,6 @@ I'm a Full Stack Software Engineer based out of Philadelphia, PA with experience
 
 I spend a great deal of time trying out new technologies so be sure to check out my personal projects to get a good feel for what I've been up to.`;return Ge.useEffect(()=>{if(n<l.length){const u=setTimeout(()=>{t(a=>a+l[n]),r(a=>a+1)},8);return n===l.length-1&&i(!0),()=>clearTimeout(u)}},[l,n]),j.jsxs(h0,{children:[j.jsx(m0,{children:e}),o&&j.jsxs(qo,{style:{textAlign:"center",wordWrap:"break-word",fontSize:"3.5em",padding:"24px",display:"flex",gap:"0.1em"},children:[j.jsx(Mt,{type:"react"}),j.jsx(Mt,{type:"typescript"}),j.jsx(Mt,{type:"go"}),j.jsx(Mt,{type:"graphQl"}),j.jsx(Mt,{type:"mongo"}),j.jsx(Mt,{type:"python"})]})]})}const g0=re.div`
   align-items: center;
-  margin: auto;
   display: flex;
   flex-direction: column;
   border-bottom: 2px solid white;
