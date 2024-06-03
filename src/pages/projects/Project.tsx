@@ -3,7 +3,6 @@ import Devicon, { SupportedIcons } from "../../components/Devicon";
 
 const ProjectWrapper = styled.div`
   align-items: center;
-  margin: auto;
   display: flex;
   flex-direction: column;
   border-bottom: 2px solid white;
