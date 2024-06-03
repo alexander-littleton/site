@@ -23,6 +23,18 @@ export default function Projects() {
         description="Multi-page custom portfolio site with React Router for SPA routing. Built on top of Vite for a fast and lightweight DevX. Utilizes styled-components for most styling and atomic components. "
       />
       <Project
+        title="Dynamic Calendar (2024)"
+        stack={["go"]}
+        gitHubLink="https://github.com/alexander-littleton/go-htmx-project"
+        description="A simple server-side-rendered dynamic calendar utilizing Go, Tailwind, Templ, and HTMX."
+      />
+      <Project
+        title="Cadence API (2023)"
+        stack={["go", "mongo"]}
+        gitHubLink="https://github.com/alexander-littleton/cadence-api"
+        description="A RESTful Go + Mongo web server with Layered Architecture in the style of an enterprise application. Includes thorough BDD based automated testing using Ginkgo."
+      />
+      <Project
         title="Client Sheet (2020)"
         imageSource={clientSheetThumbnail}
         stack={["typescript"]}
