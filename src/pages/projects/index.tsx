@@ -20,7 +20,7 @@ export default function Projects() {
         title="Portfolio Site"
         stack={["typescript", "react"]}
         gitHubLink="https://github.com/alexander-littleton/alexander-littleton.github.io/tree/main"
-        description="Multi-page custom portfolio site with React Router for SPA routing. Built on top of Vite for a fast and lightweight DevX. Utilizes styled-components for most styling and atomic components. "
+        description="Multi-page custom portfolio site with React Router for SPA routing. Built on top of Vite for a fast and lightweight DevX. Utilizes styled-components for atomic components and styling."
       />
       <Project
         title="Dynamic Calendar (2024)"
