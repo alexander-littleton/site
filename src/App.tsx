@@ -1,7 +1,7 @@
 import "./App.css";
 import styled from "styled-components";
 import Navigation from "./Navigation";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import FadeIn from "./components/FadeIn";
 
 const NamePlateWrapper = styled.div`
@@ -60,7 +60,7 @@ const MarqueeTextWrapper = styled.a`
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <FadeIn style={{ display: "flex", flexDirection: "column" }}>
         <NamePlateWrapper>
           <NamePlate href="/">ALEX LITTLETON</NamePlate>
@@ -76,7 +76,7 @@ function App() {
           </MarqueeTextWrapper>
         </Marquee>
       </FadeIn>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
